@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic-tac-toe</title>
+    <link rel="stylesheet" href="tic.css">
+</head>
+<script>
+    alert("click (Start new game) to initiate gameplay")
+</script>
+
+<body onload="startgame()">
+
+    <center>
+        <h1 class="test " style="font: size 20px;color:rgb(10, 78, 78); font-family:Arial, Helvetica, sans-serif;">Tic-Tac-Toe</h1>
+    </center>
+
+
+    <h2 id="message" class="text1"></h2>
+
+    <table class="shift">
+        <tr>
+            <td id="s1" class="Square" onclick="nextMove(this);"></td>
+            <td id="s2" class="Square" onclick="nextMove(this);"></td>
+            <td id="s3" class="Square" onclick="nextMove(this);"></td>
+        </tr>
+        <tr>
+            <td id="s4" class="Square" onclick="nextMove(this);"></td>
+            <td id="s5" class="Square" onclick="nextMove(this);"></td>
+            <td id="s6" class="Square" onclick="nextMove(this);"></td>
+        </tr>
+        <tr>
+            <td id="s7" class="Square" onclick="nextMove(this);"></td>
+            <td id="s8" class="Square" onclick="nextMove(this);"></td>
+            <td id="s9" class="Square" onclick="nextMove(this);"></td>
+        </tr>
+    </table>
+    <button type="button" onclick="startGame()" class="but">Start new game</button>
+    <script type="text/javascript" src="tic.js"></script>
+
+
+
+
+</body>
+
+</html>
